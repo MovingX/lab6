@@ -270,6 +270,17 @@ function add(...args) {
     sum += args[i] / (i + 1);
   }
   return Math.round(sum);
+  
+  2 Задача CodeWars
+  function arrayPacking(a) {
+  var result = 0;
+  
+  for (var i = 0; i < a.length; i++) {
+    result += a[i] << (8 * i);
+  }
+  
+  return result;
+}
 }
 ```
 
