@@ -39,7 +39,222 @@
 
 ```html
 <pre>
+  <style>
+				
+				#test a:link, #test a:visited {
+					color: red;
+					text-decoration: none;
+				}
+				
+				#test a:hover {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				
+				
+				a.www:link, a.www:visited {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				a.www:hover {
+					text-decoration: none;
+				}
+				
+				
+				#test a.www:link,#test a.www:visited {
+					color: red;
+					text-decoration: none;
+				}
+				
+				#test a.www:hover {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				
+				.eee a.www:link,.eee a.www:visited {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				.eee a.www:hover {
+					color: black;
+					text-decoration: none;
+				}				
+				
+			</style>
+			
+			<!--1.Селектор: div p{}-->
+			<div>
+				<p>Text</p>
+			</div>
+			
+			<!--2.Селектор: div h2{}-->
+			<div>
+				<h2>Heading</h2>
+			</div>
+			
+			<!--3.Селектор: #test p{}-->
+			<div id="test">
+				<p>Text</p>
+			</div>
+			
+			<!--4.Селектор: #test h2{}-->
+			<div id="test">
+				<h2>Heading</h2>
+			</div>
+			
+			<!--5.Селектор:.bbb{}-->
+			<div class="bbb">Text</div>
+			
+			<!--6.Селектор: #test .bbb{}-->
+			<div id="test">
+				<div class="bbb">Text</div>
+			</div>
+			
+			<!--7.Селектор: p.bbb{}-->
+			<p class="bbb">Text</p>
+			
+			<!--8.Селектор: h2.bbb{}-->
+			<h2 class="bbb">Heading</h2>
+			
+			<!--9.Селектор: #test p.bbb{}-->
+			<div id="test">
+				<p class="bbb">Text</p>
+			</div>
+			
+			<!--10.Селектор: .bbb,.xxx{}-->
+			<div class="bbb">Text</div>
+			<div class="xxx">Heading</div>
+			
+			<!--11.Селектор: p.bbb,h2.xxx{}-->
+			<p class="bbb">Text</p>
+			<h2 class="xxx">Heading</h2>
+			
+			<!--12.Селектор: #test p.bbb,#test p.xxx{}-->
+			<div id="test">
+				<p class="bbb">Text</p>
+				<p class="xxx">Heading</p>
+			</div>
+			
+			<!--13.Селектор: .fff{}-->
+			<div class="fff">Text</div>
+			
+			<!--14.Селектор: .fff p{}-->
+			<p class="fff">Text</p>
+			
+			<!--15.Селектор: p.fff{}-->
+			<p class="fff">Text</p>
+			
+			<!--16.Селектор: .fff.bbb{}-->
+			<div class="fff">
+				<div class="bbb">Text</div>
+			</div>	
+			
+			<!--17.Селектор: .fff h2.bbb{}-->
+			<div class="fff">
+				<h2 class="bbb">Heading</h2>
+			</div>
+			
+			<!--18.Селектор: #test a:link, #test a:visited-->
+			<div id="test">
+				<a href="#" class="www">Link</a>
+				<a href="#" class="www">Visited link</a>
+			</div>
+			
+			<!--19.Селектор: a.www:link, a.www:visited-->
+			<a href="#" class="www">Link</a>
+			<a href="#" class="www">Visited link</a>
+			
+			<!--20.Селектор: #test a.www:link,#test a.www:visited{}-->
+			<div id="test">
+				<a href="#" class="www">Ссылка с классом www внутри элемента с id=test</a>
+			</div>
+			
+			<!--21.Селектор: .eee a.www:link, .eee a.www:visited{}-->
+			<div class="eee">
+				<a href="#" class="www">Ссылка с классом www внутри элемента с классом eee</a>
+			</div>
+      
+  <style>
+				.frame{
+					margin:auto;
+					border: 2px dotted black;
+					width: 500px;
+					height: auto;
+					text-align: justify;
+					margin-bottom: 20px;
+				}
+				
+				.task23{
+					margin-left: 10px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					border: 1px solid red;
+					width: 100px;
+					height: 100px;	
+				}
+				
+				.task24{
+					margin-left: 10px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					border: 2px dotted blue;
+					width: 300px;
+					height: 100px;
+				}
+				
+				.task25{
+					margin-left: 10px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					border: 2px dotted green;
+					border-radius: 10px 20px 10px 20px;
+					width: 200px;
+					height: 200px;	
+				}
+				
+				.task26{
+					margin-left: 10px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					border: 1px solid red;
+					border-radius: 100px;
+					width: 100px;
+					height: 100px;	
+				}
+				
+			</style>
+			
+			<div class="frame">
+				<p style="text-decoration: underline">Привет мир!</p>
+				<p style="text-decoration: line-through">Привет мир!</p>
+				<p style="text-decoration: overline">Привет мир!</p>
+			</div>
+			
+			<div class="frame">
+				<div class="task23"> </div>
+			</div>
+			
+			<div class="frame">
+				<div class="task24"> </div>
+			</div>
+			
+			<div class="frame">
+				<div class="task25"> </div>
+			</div>
+			
+			<div class="frame">
+				<div class="task26"> </div>
+			</div>		
 
+			<div class="frame">
+				<p><a href="#" style="margin-left:10px; text-decoration:underline; color:green;">ссылка</a></p>
+				<p><a href="#" style="margin-left:10px; text-decoration:underline; color:red;">ссылка</a></p>
+				<p><a href="#" style="margin-left:10px; text-decoration:none; color:black;">ссылка</a></p>
+			</div>
 </pre>
 ```
 
