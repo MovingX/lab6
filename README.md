@@ -258,6 +258,7 @@
 </pre>
 ```
 <p>Задачи CodeWars</p>
+
 ```JavaScript
 1 Задача CodeWars
 function add(...args) {
