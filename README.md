@@ -258,5 +258,19 @@
 </pre>
 ```
 
+```JavaScript
+1 Задача CodeWars
+function add(...args) {
+  if (args.length == 0) {
+    return 0;
+  }
+  var sum = 0;
+  for (var i = 0; i < args.length; i++) {
+    sum += args[i] / (i + 1);
+  }
+  return Math.round(sum);
+}
+```
+
 <h2>Вывод</h2>
 Я научился работать с классами, тэгоми, селекторами.
