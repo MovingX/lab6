@@ -282,6 +282,30 @@ function add(...args) {
   return result;
 }
 }
+
+3 Задача
+function charToAscii(string){
+  if (string.length === 0) return null;
+  const hash = {};
+  for (let i = 0; i < string.length; i++) {
+    const char = string.charAt(i);
+    if (/^[a-zA-Z]$/.test(char) && !hash.hasOwnProperty(char)) {
+      hash[char] = char.charCodeAt(0);
+    }
+  }
+  
+  return hash;
+}
+
+5 Задача
+function titleToNumber(title) {
+  let result = 0;
+    for (let i = 0; i < title.length; i++) {
+      const charCode = title.charCodeAt(i) - 64; 
+      result += charCode * Math.pow(26, title.length - 1 - i);
+    }
+  return result;
+}
 ```
 
 <h2>Вывод</h2>
