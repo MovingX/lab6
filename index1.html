@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Лабораторная 6</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="header">
+			<h1>Лабораторная 6</h1>
+			<li><a href="index1.html">1 страница (Задания с 1-21)</a></li>
+			<li><a href="index2.html">2 страница (Задания с 22-27)</a></li>
+			<li><a href="https://www.codewars.com/users/MovingX/completed_solutions">Задачи CodeWars</a></li>				
+		</div>		
+		
+		
+		<div class="Block1">	
+			
+			<style>
+				
+				#test a:link, #test a:visited {
+					color: red;
+					text-decoration: none;
+				}
+				
+				#test a:hover {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				
+				
+				a.www:link, a.www:visited {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				a.www:hover {
+					text-decoration: none;
+				}
+				
+				
+				#test a.www:link,#test a.www:visited {
+					color: red;
+					text-decoration: none;
+				}
+				
+				#test a.www:hover {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				
+				.eee a.www:link,.eee a.www:visited {
+					color: blue;
+					text-decoration: underline;
+				}
+				
+				.eee a.www:hover {
+					color: black;
+					text-decoration: none;
+				}				
+				
+			</style>
+			
+			<!--1.Селектор: div p{}-->
+			<div>
+				<p>Text</p>
+			</div>
+			
+			<!--2.Селектор: div h2{}-->
+			<div>
+				<h2>Heading</h2>
+			</div>
+			
+			<!--3.Селектор: #test p{}-->
+			<div id="test">
+				<p>Text</p>
+			</div>
+			
+			<!--4.Селектор: #test h2{}-->
+			<div id="test">
+				<h2>Heading</h2>
+			</div>
+			
+			<!--5.Селектор:.bbb{}-->
+			<div class="bbb">Text</div>
+			
+			<!--6.Селектор: #test .bbb{}-->
+			<div id="test">
+				<div class="bbb">Text</div>
+			</div>
+			
+			<!--7.Селектор: p.bbb{}-->
+			<p class="bbb">Text</p>
+			
+			<!--8.Селектор: h2.bbb{}-->
+			<h2 class="bbb">Heading</h2>
+			
+			<!--9.Селектор: #test p.bbb{}-->
+			<div id="test">
+				<p class="bbb">Text</p>
+			</div>
+			
+			<!--10.Селектор: .bbb,.xxx{}-->
+			<div class="bbb">Text</div>
+			<div class="xxx">Heading</div>
+			
+			<!--11.Селектор: p.bbb,h2.xxx{}-->
+			<p class="bbb">Text</p>
+			<h2 class="xxx">Heading</h2>
+			
+			<!--12.Селектор: #test p.bbb,#test p.xxx{}-->
+			<div id="test">
+				<p class="bbb">Text</p>
+				<p class="xxx">Heading</p>
+			</div>
+			
+			<!--13.Селектор: .fff{}-->
+			<div class="fff">Text</div>
+			
+			<!--14.Селектор: .fff p{}-->
+			<p class="fff">Text</p>
+			
+			<!--15.Селектор: p.fff{}-->
+			<p class="fff">Text</p>
+			
+			<!--16.Селектор: .fff.bbb{}-->
+			<div class="fff">
+				<div class="bbb">Text</div>
+			</div>	
+			
+			<!--17.Селектор: .fff h2.bbb{}-->
+			<div class="fff">
+				<h2 class="bbb">Heading</h2>
+			</div>
+			
+			<!--18.Селектор: #test a:link, #test a:visited-->
+			<div id="test">
+				<a href="#" class="www">Link</a>
+				<a href="#" class="www">Visited link</a>
+			</div>
+			
+			<!--19.Селектор: a.www:link, a.www:visited-->
+			<a href="#" class="www">Link</a>
+			<a href="#" class="www">Visited link</a>
+			
+			<!--20.Селектор: #test a.www:link,#test a.www:visited{}-->
+			<div id="test">
+				<a href="#" class="www">Ссылка с классом www внутри элемента с id=test</a>
+			</div>
+			
+			<!--21.Селектор: .eee a.www:link, .eee a.www:visited{}-->
+			<div class="eee">
+				<a href="#" class="www">Ссылка с классом www внутри элемента с классом eee</a>
+			</div>
+			
+			
+		</div>					
+
+		<footer>
+			<p>Выполнено © Морошкином Максимом</p>
+		</footer>
+	</body>
+</html>	
